@@ -1,1 +1,0 @@
-Aim: write a program to check whether the give sentence consist of all vowels or not. Here are some of the words: Education, Automobile, Evacuation, Reputation
