@@ -16,10 +16,11 @@ while True:
     elif ch == 3:
          if len (a) == 0:
             print ("stack is empty")
+         else:
+             print ("The Element In The Stack is")
+             for i in a:
+                 print (i)
+    elif ch == 4:
+        sys.exit ()
     else:
-                print ("The Element In The Stack is")
-    for i in a:
-        print (i)
- elif ch == 4:
-     else sys.exit ()
-     print ("Invalid Choice")
+        print ("Invalid Choice")
