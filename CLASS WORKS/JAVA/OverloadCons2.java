@@ -53,9 +53,3 @@ vol = myclone.volume();
 System.out.println("Volume of myclone is " + vol);
 }
 } 
-
-
-
-class OverloadCons2 {
-
-}
