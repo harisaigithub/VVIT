@@ -1,0 +1,8 @@
+For AWS-Architectural Diagram Preparations and Practice :
+
+go to url:   https://aws.amazon.com/architecture/icons/
+
+Select any  Tools which has enable with Tag "AWS Diagram Tool".  
+
+Note : 
+Design the Diagram for the LAB , Shows all the Names of Regions ,AZs, VPCs, Subnets, Routers, RDS ..etc  as per the  "HAS-WebApplication Builder Lab" mentioned manner only.

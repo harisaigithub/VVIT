@@ -1,0 +1,27 @@
+Installation and working on python, jupiter and its different libraries for deep learning (Numpy, Pandas, Matplotlib, Kera, Tensor Flow)
+
+
+LAYERS:
+
+class name 
+tf.keras.layers.layer
+
+MODELS:
+tf.keras.Model
+
+MEHTODS:
+tf.keras.Model.fit
+tf.keras.Model.predict
+tf.keras.Model.evaluate
+tf.keras.Model.compile used to configure models(to set parameters like loss function (mse,mae, cross entropy, cahtegorical cross entropy etc.., optimisers adam rms etc..,) 
+
+for categorical columns we have concept called OneHotEncoder from sklearn or we can use 2 address code categorical method available in keras
+
+
+1st modeal
+classification on 
+2nd model "
+classification with iris dataset
+3rd classification on heart dataset
+
+assignment onehotencoding
