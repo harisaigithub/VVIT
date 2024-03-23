@@ -1,0 +1,13 @@
+if (( $#==1 ))
+then
+ cat /etc/passwd > output
+ grep $1 output | cut -f 1,7 -d :
+else
+ echo "this script accepts only one argument 1.username"
+fi
+
+
+
+
+
+

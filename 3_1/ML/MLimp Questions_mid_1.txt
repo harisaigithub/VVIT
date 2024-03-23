@@ -1,0 +1,17 @@
+1a. explain principal component analysis for unsupervised learning
+1b. explain heirarchical clusetering 
+2a. explain regression trees in detail
+2b. explain bayesian additive regression trees
+3a. explain dimensionality reduction methods in detail
+3b. explain considerations in high dimensional data -- more no of attributes. then how to perform
+4a. what is a hyperplane explain maximum margin classifier in detail
+4b. explain supper vector machiness in detial
+5a. explain decision tree classifier in detail
+5b. explain disadvantages and advantages of tree based measures
+6a. explain subset selection methods in detail
+6b. explain shrinkage methods in detail--ridge/lasso regression
+7a. what is bagging and explain random forests in detail
+7b. List the challenges of unsupervised learning and what are the advantages and sdisadvantages of K means clustering
+
+
+Open book problems///

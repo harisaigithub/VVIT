@@ -1,0 +1,89 @@
+--PL/SQL code for creating forms for an employee information system:
+
+
+create or replace package employee_info as
+  function get_employee (employee_id number) return employee%rowtype;
+end;
+/
+
+create or replace type employee is object (
+  employee_id number,
+  first_name varchar2 (32),
+  last_name varchar2 (32),
+  email varchar2 (64),
+  phone_number varchar2 (32)
+);
+/
+
+create or replace package body employee_info as
+  function get_employee (employee_id number) return employee%rowtype is
+    begin
+      return employee (
+        employee_id,
+        (select first_name from employees where employee_id = employee_id),
+        (select last_name from employees where employee_id = employee_id),
+        (select email from employees where employee_id = employee_id),
+        (select phone_number from employees where employee_id = employee_id)
+      );
+    end;
+end;
+/
+
+create or replace form employee_info as
+  object
+    -- form header
+    attribute form_name varchar2 (32) := 'Employee Information';
+    attribute form_width number := 400;
+    attribute form_height number := 300;
+    -- form body
+    attribute employee_id_label varchar2 (32) := 'Employee ID';
+    attribute employee_id_width number := 100;
+    attribute employee_id_height number := 20;
+    attribute first_name_label varchar2 (32) := 'First Name';
+    attribute first_name_width number := 100;
+    attribute first_name_height number := 20;
+    attribute last_name_label varchar2 (32) := 'Last Name';
+    attribute last_name_width number := 100;
+    attribute last_name_height number := 20;
+    attribute email_label varchar2 (32) := 'Email';
+    attribute email_width number := 100;
+    attribute email_height number := 20;
+    attribute phone_number_label varchar2 (32) := 'Phone Number';
+    attribute phone_number_width number := 100;
+    attribute phone_number_height number := 20;
+    attribute employee_id_text_box varchar2 (32) := 'employee_id';
+    attribute first_name_text_box varchar2 (32) := 'first_name';
+    attribute last_name_text_box varchar2 (32) := 'last_name';
+    attribute email_text_box varchar2 (32) := 'email';
+    attribute phone_number_text_box varchar2 (32) := 'phone_number';
+    attribute submit_button_label varchar2 (32) := 'Submit';
+    attribute submit_button_width number := 100;
+    attribute submit_button_height number := 20;
+    -- form events
+    procedure on_submit (event varchar2);
+  end;
+/
+
+create or replace package body employee_info as
+  procedure on_submit (event varchar2) is
+    begin
+      -- get the employee id from the text box
+      employee_id := to_number (:employee_id_text_box);
+      -- get the employee first name from the text box
+      first_name := :first_name_text_box;
+      -- get the employee last name from the text box
+      last_name := :last_name_text_box;
+      -- get the employee email from the text box
+      email := :email_text_box;
+      -- get the employee phone number from the text box
+      phone_number := :phone_number_text_box;
+      -- insert the employee into the database
+      insert into employees values (employee_id, first_name, last_name, email, phone_number);
+      -- clear the text boxes
+      :employee_id_text_box := '';
+      :first_name_text_box := '';
+      :last_name_text_box := '';
+      :email_text_box := '';
+      :phone_number_text_box := '';
+    end;
+end;

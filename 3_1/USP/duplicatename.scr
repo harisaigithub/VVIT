@@ -1,0 +1,12 @@
+#!/bin/sh
+if (( $# == 0 ))
+then
+dirname=/home/byrapardhasaradhi
+find $dirname -type f | while read vo
+do
+  echo `basename "$vo"`
+done | awk '{arr[$0]++; next} END{for (i in arr){if(arr[i]>1){print i}}}'  
+else
+	 echo "this script doesn't accept any arguments"
+fi
+

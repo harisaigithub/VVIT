@@ -1,0 +1,28 @@
+Toast Implementation in Android:
+-------------------------------
+In Android Basically Two Types of Toast Implementation.
+
+1.By Using Static
+
+2.By Using Predefined
+
+Def Of Toast:
+-------------
+>A Toast is a Class.
+
+>A Toast Must Starts with a Capital Letter.
+
+Implementation of a Toast Class:
+--------------------------------
+
+Toast.maketext
+(this|MainActivity.this|
+getapplicationContext(),
+"gopal",
+Toast.LENGTH_SHORT|Toast.LENGTH_LONG,
+).show();
+
+Example:
+--------
+Toast.maketext(this,"gopal",
+Toast.LENGTH_SHORT).show();

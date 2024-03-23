@@ -1,0 +1,1 @@
+architecture, functionality of neurons in different layers-SYMON HAYKIN CHAPTER 4(MLP) PAGE N0:178-182

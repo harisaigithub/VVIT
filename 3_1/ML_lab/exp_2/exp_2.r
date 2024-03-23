@@ -1,0 +1,16 @@
+library(ISLR)
+library(MASS)
+data("Auto")
+head(Auto)
+lm.fit<-lm(mpg~horsepower,data=Auto)
+summary(lm.fit)
+
+predict(lm.fit,data.frame(horsepower=c(98)),interval="prediction")
+
+attach(Auto)
+plot(horsepower,mpg)
+abline(lm.fit,lwd=3,col="green")
+which.max(hatvalues(lm.fit))
+par(mfrow = c(2,2))
+plot(lm.fit)
+pairs(Auto)

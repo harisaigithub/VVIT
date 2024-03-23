@@ -1,0 +1,7 @@
+#!/bin/bash
+# 1. copy first 5 lines from file4 to file5
+# 2. extract lines 3 to 5 of file3 and append to file5
+# 3. copy lines 6 to end of file4 and append to file5
+head -5 file4 > file5
+head -5 file3 | tail -n +3 file3 >> file5
+head -6 file4 >> file5

@@ -1,0 +1,10 @@
+1.Fundamental steps in DIP 
+2.Components of image processing systems 
+3.Definition and types of resolution, also their effect on image quality 
+4.Basic pixel relationships 
+5.Colour model conversions 
+6.Contrast enhancement using various transformation functions 
+7.Various slicing transformation functions (Prepare Example 2 on Page 220 of the attached pdf file)
+8.Histogram equalization: Theory including proof, also learn how to solve problems related to histogram equalization  
+9.Image sharpening using second-order derivative operators 
+

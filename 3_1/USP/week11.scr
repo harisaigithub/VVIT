@@ -1,0 +1,12 @@
+if (( $# == 0 ))
+then
+ awk -F '/' '{
+ f=$NF
+ a[f] = f in a? a[f] RS $0 : $0
+ b[f]++}
+END{for(x in b)
+ if (b[x]>1)
+ printf "Duplicate filename: %s\n%s\n",x,a[x]}' <(find . -type f)
+else
+ echo "this script not accepts any arguments"
+fi

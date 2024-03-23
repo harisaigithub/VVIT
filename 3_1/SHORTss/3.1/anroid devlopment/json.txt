@@ -1,0 +1,367 @@
+
+
+Google Android Application Developement:
+----------------------------------------
+1.Def of Android? Android System Architecture.
+
+>Android is a opensource Platform.Based on 
+Linux Kernel.
+
+Android-FrontEnd-Xml File
+
+BackEnd-java/kotlin
+
+Android Platform Architecture:
+-----------------------------
+Layer-1 System Apps || User Apps
+
+System Apps:
+------------
+A System app is a predefined applications in our
+mobile.
+
+Example:
+--------
+Caluclator,Camera,gallery.........
+
+User Apps:
+---------
+User downloaded the applications via playstore.
+
+Example:
+--------
+way2news...camscanner....
+
+Layer-2(HAL-Hardware Abstraction Layer)
+---------------------------------------
+Application-software + hardware
+
+            software-set of programs
+            
+             front end +back end
+
+             xml   + java/kotlin
+
+>to run the application using both hardware and
+software.
+
+Layer-3:API-Application Programming Interface.
+----------------------------------------------
+to provide the user interface to the customer.
+
+data arranged in inproper order.like-text file,
+jsonfile.
+   
+2.Android History:
+-----------------
+>Android was developed by Andy Rubin in the year
+of 2003.
+
+>the main key authors are 4 members
+
+    1.Andy Rubin
+    2.Rich Miner
+    3.Nick Sears
+    4.Chris White
+>Android was incorporated with google in the year
+of 2005.
+
+>the first android application developed and working
+with Digital Camera's.
+
+>in the year of 2007 to develope the android os 
+announces by google.
+
+>the first android operating system to work with
+smartphone (i,e) HTC in the year of 2008 to launch
+the mobile in the market.
+
+Challenges of Android App Developement:
+--------------------------------------
+>Android supports Multiple Screen Sizes and
+Resolutions.
+
+>Android supports to provide the authentication for
+the application.
+
+>Email id or password
+>Phone otp Authentication.
+>google sign in authentication.
+>facebook authentication.
+>github authentication.
+>fingerprint authentication.
+>aadhar otp authentication.
+>face recognization
+
+>android supports different types of firebase real
+time authentication.
+
+sharedpreferences-small amount of data.
+
+sqlite database-local database
+
+roomdata base-local database
+
+firebase realtime database
+
+3.Android Studio Installation.
+
+4.Android Views and ViewGroups.
+-------------------------------
+Views:
+-----
+>A View is a Basic Building block of user interface.
+
+>A View Must Starts with a Capital letter.
+
+>A Views are Visible.
+
+>A View Must Closed with Both Internal and External
+closing tag.
+>A View is Subclass.
+
+Syntax for Views:
+-----------------
+syntax1:<View> </View>-External Closing Tag
+syntax2:<View/> self closing tag
+
+View Implementation:
+------------------
+<View
+view propertyname:property value
+>
+</View>
+
+View Properties:
+----------------
+layout_width="match_parent|200dp"
+layout_height="wrap_content|300dp"
+
+
+View Types:
+-----------
+1.Textview  5.RadioGroup       9.Switch
+
+2.EditText  6.ProgressDialogue 10.SeekBar
+
+3.RadioButton 7.ProgressBar     11.RatingBar
+
+4.CheckBox    8.Spinner         12.ToogleButton
+
+13.Button 
+
+View Example:
+-------------
+Syntax-1:
+--------
+<Textview
+android:layout_width="match_parent|200dp"
+android:layout_height="wrap_content|200dp"
+>
+</Textview>
+
+syntax2:
+--------
+<Textview
+android:layout_width="match_parent|200dp"
+android:layout_height="wrap_content|200dp"
+android:text="gopal"
+android:textcolor="#000"-Black
+android:textsize="20sp"
+android:textstyle="Bold|italic"
+/>
+
+ViewGroups:
+-----------
+>A ViewGroup is a Basic Building Block of UI.
+
+>A ViewGroup Must Strats with a Capital Letter.
+
+>A ViewGroups are not Visible.
+
+>A ViewGroup Must Enclosed with External Closing 
+tag only.
+
+>A Viewgroup holds entire all views.
+
+>A ViewGroup is a ParentClass of Views and all 
+SubClasses.
+
+Syntax:
+------
+<ViewGroup>
+
+</ViewGroup>
+
+ViewGroup Properties:
+--------------------
+<ViewGroup
+android:layout_width="match_parent"
+android:layout_heigth="warp_content"
+android:orientation="vertical/horizontal"
+>
+
+</ViewGroup>
+
+ViewGroup Types:
+---------------
+1.LinearLayout
+
+2.RelativeLayout
+
+3.ConstraintLayout
+
+4.GridLayout
+
+5.TableLayout
+
+6.StraggedGridLayout
+
+Views and ViewGroups Hirarchy:
+------------------------------
+<ViewGroup
+width
+height
+orientation
+>
+<Views>
+
+
+<ViewGroup
+width
+height
+orientation
+>
+</ViewGroup>
+
+</ViewGroup>
+
+
+Example for Views/ViewGroups:
+-----------------------------
+<LL
+W
+H
+O=V>
+
+<Button
+W="M"
+H="W"/>
+
+<Button
+W="M"
+H="W"/>
+<LL
+W
+H
+O=H
+>
+<Button
+W="M"
+H="W"/>
+<Button
+W="M"
+H="W"/>
+</LL>
+</LL>
+
+Android Application Structure:
+------------------------------
+
+Android Application Components:
+------------------------------
+1.Activity's:
+------------
+>An Activity is a single screen of userinterface.
+>it is a combination of xml file and java file.
+>every application each and every screen known as
+Activity.
+
+2.Services
+3.BroadCast Recivers
+4.Content Providers.
+
+5.View Properties& ViewGroup Properties.
+
+6.onclick events for views and viewgroups.
+
+7.challenges of Android App Developement?
+
+8.Android Application Components.
+
+9.Android Versions and Android Project Structure.
+
+10.How to Enable the Developer options in our Mobile.
+
+11.sample helloworld application.
+
+12.Android Intents Types
+
+   A.Implicit Intent
+
+   B.Explicit Intent
+A.Implicit Intents:
+------------------
+Dial App
+browser
+settings action
+camera action
+
+B.Explicit Intents:
+------------------
+Screen Navigation
+Data Parsing between Two Activities.
+
+13.Caluclator App Using EditTexts Arithmetic
+ operations.
+
+14.Dialogues Implementation.
+  A.Alert Dialogue
+  B.DatePicker Dialogue
+  C.TimePicker Dialogue
+15.ToastImplementation in android.
+
+16.Menu's Implementation
+  A.Options Menu
+  B.Contextual Menu
+17.HelloToast Count App.
+
+18.VVIT CSM Student Registration form Using Views
+and View Groups.
+
+19.Student Registration form using Material Design.
+
+20.Tabs Navigation.
+
+21.Recyclerview Implementation.
+
+22.Textview with Scrollview using autolinks.
+
+23.Retrofit Using Apis.
+
+24.Notification Build In Our Mobile Using Pending
+Intent Opration.
+
+25.Services Example -MediaPlayer.
+
+26.BroadCast Recievers & Types.
+  A.System BroadCast.
+  B.Custom BroadCast.
+27.AlamManager using Service through 
+custom BroadCast.
+
+28.Shared Preferences.
+
+29.Room DataBase.
+
+30.Sample Application 
+  1.Register Page 
+  2.Signin Page
+  3.Forgot Password 
+--------------------------------------------------- 
+
+
+
+
+
+
