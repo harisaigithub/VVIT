@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    #dragElement {
+      width: 100px;
+      height: 100px;
+      cursor: move;
+      border-radius: 10px;
+      user-select: none;
+      padding: 20px; /* Added padding for space around the image */
+    }
+
+    #dropArea {
+      width: 300px;
+      height: 200px;
+      border: 2px dashed #2ecc71;
+      margin: 20px auto; /* Added margin for space around the element */
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 15px;
+      background-color: #ecf0f1;
+    }
+
+    #dropArea:hover {
+      background-color: #d5d8dc;
+    }
+
+    #dropArea p {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+<div id="dragElement" draggable="true">
+  <img src="download.jpg" alt="Drag me">
+</div>
+
+<div id="dropArea" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <p>Drop here</p>
+</div>
+
+<script>
+  var draggedElement;
+
+  function allowDrop(event) {
+    event.preventDefault();
+    var dropArea = event.target;
+
+    dropArea.classList.add("highlight");
+  }
+
+  function drag(event) {
+    draggedElement = event.target;
+  }
+
+  function drop(event) {
+    event.preventDefault();
+    var dropArea = event.target;
+
+    if (draggedElement !== dropArea) {
+      dropArea.appendChild(draggedElement);
+    }
+
+    dropArea.classList.remove("highlight");
+  }
+
+  document.getElementById("dragElement").addEventListener("dragstart", drag);
+</script>
+</body>
+</html>
