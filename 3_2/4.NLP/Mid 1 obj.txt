@@ -1,0 +1,262 @@
+What is the field of Natural Language Processing (NLP)?
+~ Computer Science 
+~Artificial Intelligence 
+~Linguistics 
+=All the mentioned
+
+What is the main challenge of NLP?
+=Handling Ambiguity of Sentences 
+~Handling Tokenization 
+~Handling POS-Tagging 
+~All the mentioned
+
+Choose form the following areas where NLP can be useful?
+~Automatic Text Summarization 
+~ Automatic Q&A 
+~Information Extraction 
+=All the mentioned
+
+What is Machine Translation?
+=Converts one Human language to another 
+~ Converts any human Language to Machine Language 
+~Converts any human language to English 
+~Converts Machine Language to Human Language
+
+What is Morphological Segmentation?
+~Does Discourse Analysis 
+=Separates Words into individual morphemes and identify the class of morphemes 
+~is an extension of propositional logic 
+=None of the mentioned
+
+Many words have more than one meaning; we have to select the meaning which makes the most sense in the given context. This can be resolved by _____?
+~Fuzzy logic 
+=WordSense Disambiguity 
+~Shallow Semantic Analysis 
+~All of the mentioned
+
+For a given sound clip of a person or people speaking, determine the textual representation of the speech is called _________?
+=Speech-To-Text 
+~Talk-To-Text 
+~Voice-To-Text 
+~Voice Commands
+
+In Linguistic morphology _____ is the process for reducing inflected words to their root form?
+~rooting 
+=Stemming 
+~Text-Proofing 
+~All of the mentioned
+
+How many Steps are there in NLP?
+=5 
+~4 
+~3 
+~6
+
+ __________is the step in which input sentence is converted into a hierarchical structure the corresponding to the unit meaning in sentence?
+=Syntactic processing 
+~semantic processing 
+~pragmatic processing 
+~All of the mentioned
+
+Which among the following is on of the stages in NLP Pipeline?
+~Sentiment Analysis 
+~Tokenization 
+~Spellchecking 
+~Syntactic Analysis
+
+The process of understanding the meaning and interpretation of words, signs and sentence structure is called as ___?
+~Tokenization 
+~Lexical Analysis 
+=Semantic Analysis 
+~Sentiment Analysis
+
+"I saw bats" Contains which type of ambiguity?
+~Syntactic 
+~Semantic 
+=Lexical 
+~Anaphoric
+
+"Linear sequences of words are transformed into structure that show how the words are related to each other" is the part of ____Analysis?
+~Semantic 
+=Syntactic 
+~Lexical 
+~Pragmatic
+
+How many ambiguities exist in the following sentence, "I know little Italian"?
+=1 
+~3 
+~2 
+~0
+
+____technique looks at the meaning of the word?
+~Stemming 
+=Lemmatization 
+~Stop Words 
+~Morphological Analysis
+
+Which of the following belongs to the open class group?
+=Nouns 
+~Prepositions 
+~Determinants 
+~Conjunctions
+
+Unit-2:-
+
+_________is a group of words that may belongs as a single unit or phrase?
+=Constituency 
+~Grammatically Reaction 
+~Sub-Categorization 
+~Dependencies
+
+Syntax Analyzer is also known as _____?
+~Hierarchical Analysis 
+~Sequential Analysis 
+~General Analysis 
+=Hierarchical Analysis and Parsing
+
+______tagger uses probabilistic and statistical information to assign tags to words?
+~Rule based 
+=Stochastic tagger 
+~Statistical Tagger 
+~POS tagger
+
+"I want an early upgrade" What is the type of the word class for the word "want"?
+=Verb 
+~Determinant 
+~Personal Pronoun 
+~Adjective
+
+"Buy books for children" which type of ambiguity exists in the above sentence?
+~Semantic 
+=Syntactic 
+~Lexical 
+~Pragmatic
+
+Context-free grammar also known as _____?
+~Meaning structure grammars 
+=Character structure grammars 
+~Shape structure grammar 
+~Phrase Structure grammars
+
+Consider the statement "the Students went to Class" . Assign POS tags for the statement?
+=DT NN VB P NN   
+~DT NN NN P NN 
+~NN NN VB P NN 
+~DT NN VB P DT
+
+CFG Captures _______?
+=Consistency and ordering 
+~Word meaning 
+~relation between words 
+~sentence meaning
+
+Which of the following belongs to the open class group?
+=Verbs 
+~Prepositions 
+~Determinants 
+~Conjunctions
+
+What is type of relation between the words "meet and "meat"?
+~Homophones 
+~Hyponym 
+~Co-hyponym  
+=Homonyms
+
+The words "bank/data bank/blood bank" is an example of _____?
+~Homophony 
+~Synonymy 
+~Hyponymy 
+=Polysemy
+
+"Car is a ______of "Vehicle"?
+~Antonym 
+~Hypernym 
+~Homonym 
+=Hyponym
+
+"The car hit the pole while it was moving" what type of ambiguity exists in the statement?
+~Lexical 
+~Syntactic
+=Semantic 
+~Pragmatic
+
+Which of the following pair represents Antinomy lexical relation?
+=(fat, thin) 
+~(crow, bird)  
+~(window, door) 
+~(head, nose)
+
+Perfect homonyms create problems in ______?
+~Text Recognition 
+~Information Retrieval   
+~Text Classification 
+=Speech Recognition
+
+________are the lexemes with the same orthographic form but different meaning?
+=Homographs 
+~homophones 
+~synonyms 
+~Hypernyms
+
+The study of which words occur together, and frequency of co-occurrence is called as ___?
+~Connotation 
+=Collection 
+~Imitation 
+~Location
+
+Characterizing the meaning of words in terms of its relationship to other words such as synonymy, antonym and hyponymy is called?
+~Lexical relationship 
+=Semantic analysis 
+~Collection 
+~Gradable antonyms
+
+
+Unit-3:-
+
+Parts of Speech tagging determines______?
+~ POS for each word dynamically as per meaning of the sentence  
+~ POS for each word dynamically as per sentence structure 
+~ all POS for a specific word given as input 
+= All of the mentioned
+
+One of Property of the POS Tagging?
+~Reference Tagging 
+~Co-Reference Tagging 
+=Knowledge-based Tagging 
+~Semantic Tagging
+
+Stochastic POS Tagging means ___?
+~Noun Tagging 
+~Rule-Based Tagging 
+=Statistic Tagging 
+~Parsing Tagging
+
+RuleBased POS Tagging uses ______?
+~Automated Tagging 
+=Handwritten Tagging  
+~Stochastic Tagging  
+~ParsingTagging
+
+Approach of Stochastic POS Tagging _____?
+~Stochastic Approach 
+~RuleBased Approach 
+=WordFrequency Approach 
+~Parsing Approach
+
+Brill POS Tagging also called _______?
+~Stochastic Tagging 
+=Transformation Based Tagging 
+~RuleBased Tagging 
+~Simple Parsing
+
+How many Steps involved in TBL POS Tagging ______?
+~5 
+~4
+=3
+~6
+
+Hidden Markov Model (HMM) is also called as ______?
+~Simple TBL model 
+=Double-Embedded Stochastic Model 
+~Simple Stochastic Model 
+~Advanced Stochastic Model
